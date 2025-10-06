@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Televida HD</title>
+  <!-- 🌟 Favicon -->
+  <link rel="icon" href="logo.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* --- Header con logo --- */
+    header {
+      background-color: #d90000;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    header img {
+      width: 130px; /* puedes ajustar el tamaño */
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* --- Menú navegación --- */
+    nav {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4d4d;
+    }
+
+    /* --- Secciones --- */
+    section {
+      padding: 50px 10%;
+      min-height: 400px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #d90000;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      border-left: 5px solid #d90000;
+      display: inline-block;
+      padding-left: 10px;
+      text-align: left;
+    }
+
+    section img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    /* --- Footer --- */
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 30px 10%;
+      text-align: center;
+    }
+
+    footer img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .boletin {
+      margin-top: 10px;
+    }
+
+    .boletin input {
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      width: 200px;
+    }
+
+    .boletin button {
+      background-color: #d90000;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      margin-left: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .boletin button:hover {
+      background-color: #b30000;
+    }
+
+    /* WhatsApp flotante */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      border-radius: 50%;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp img {
+      width: 35px;
+      height: 35px;
+    }
+
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🟥 Header con Logo -->
+  <header>
+    <img src="LOGO TELEVIDAHD.png" alt="img">
+  </header>
+
+  <!-- 🟦 Menú -->
+  <nav>
+    <a href="#envivo">En Vivo</a>
+    <a href="#ultimas">Último Momento</a>
+    <a href="#resumenes">Resúmenes</a>
+    <a href="#radio">Radio</a>
+    <a href="#entretenimiento">Entretenimiento</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- 🟩 Sección En Vivo -->
+  <section id="envivo">
+    <h2>En Vivo</h2>
+    <p>Transmisión en vivo desde nuestra página de Facebook:</p>
+    <!-- Reemplaza la URL del iframe con tu transmisión -->
+    <iframe 
+      src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FTelevidaHD18%2Fvideos%2F691921027279730%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+      width="560" 
+      height="315" 
+      style="border:none;overflow:hidden" 
+      scrolling="no" 
+      frameborder="0" 
+      allowfullscreen="true"></iframe>
+  </section>
+
+  <!-- 📰 Último Momento -->
+  <section id="ultimas">
+    <h2>Último Momento</h2>
+    <p>Noticias de última hora y actualizaciones en tiempo real.</p>
+    <img src="noticias.jpg" alt="Último Momento">
+  </section>
+
+  <!-- 📝 Resúmenes -->
+  <section id="resumenes">
+    <h2>Resúmenes</h2>
+    <p>Mira los resúmenes de las noticias más importantes del día.</p>
+    <img src="resumenes.jpg" alt="Resúmenes Informativos">
+  </section>
+
+  <!-- 📻 Radio -->
+  <section id="radio">
+    <h2>Radio</h2>
+    <p>Escucha nuestra transmisión radial en vivo.</p>
+    <img src="radio.jpg" alt="Radio Televida HD">
+  </section>
+
+  <!-- 🎭 Entretenimiento -->
+  <section id="entretenimiento">
+    <h2>Entretenimiento</h2>
+    <p>Programas especiales, cultura y diversión para toda la familia.</p>
+    <img src="entretenimiento.jpg" alt="Entretenimiento">
+  </section>
+
+  <!-- 📞 Footer -->
+  <footer id="contacto">
+    <img src="LOGO TELEVIDAHD.png" alt="img">
+    <p>Televida HD | Choluteca, Honduras</p>
+    <p>Email: contacto@televidahd.com</p>
+    <p>Tel: (+504) 2229-6800</p>
+    <div class="boletin">
+      <input type="email" placeholder="Suscríbete al boletín">
+      <button>Enviar</button>
+    </div>
+    <p>&copy; 2025 Televida HD - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- 📱 Botón WhatsApp -->
+  <a href="https://wa.me/50400000000" target="_blank" class="whatsapp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+</body>
+</html>
